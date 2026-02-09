@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam edu | Simple Environmental Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Sam edu</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+  
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Learn About Our Planet</h1>
+            <p>Simple environmental education for everyone. Free resources to understand and protect our world.</p>
+            <a href="#courses" class="btn">Start Learning</a>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Learn About The Environment?</h2>
+            <p>Understanding our planet is the first step to protecting it. We make environmental education simple and accessible.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-book"></i>
+                    <h3>Simple Lessons</h3>
+                    <p>Easy-to-understand materials for all ages.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Focus</h3>
+                    <p>Learn about environmental issues worldwide.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Take Action</h3>
+                    <p>Practical steps to make a difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Free Courses</h2>
+            <p>Start with these simple courses. No sign-up required.</p>
+            
+            <div class="course-list">
+                <div class="course">
+                    <div class="course-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Climate Basics</h3>
+                    <p>Understand climate change in simple terms.</p>
+                    <a href="#" class="small-btn">Start</a>
+                </div>
+                
+                <div class="course">
+                    <div class="course-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Recycling 101</h3>
+                    <p>Learn proper recycling techniques.</p>
+                    <a href="#" class="small-btn">Start</a>
+                </div>
+                
+                <div class="course">
+                    <div class="course-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Tree Planting</h3>
+                    <p>How to plant and care for trees.</p>
+                    <a href="#" class="small-btn">Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources">
+        <div class="container">
+            <h2>Quick Resources</h2>
+            <div class="resource-grid">
+                <div class="resource">
+                    <h3><i class="fas fa-video"></i> Video Guides</h3>
+                    <p>Short videos explaining key concepts.</p>
+                </div>
+                
+                <div class="resource">
+                    <h3><i class="fas fa-file-pdf"></i> PDF Guides</h3>
+                    <p>Downloadable guides for offline use.</p>
+                </div>
+                
+                <div class="resource">
+                    <h3><i class="fas fa-question-circle"></i> Q&A</h3>
+                    <p>Common questions answered simply.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Send us a message.</p>
+            
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> hello@samuedu.org</p>
+                <p><i class="fas fa-phone"></i> (233) 5500-51031</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>EcoLearn</span>
+                </div>
+                <p>Simple environmental education for everyone.</p>
+                <p class="copyright">© 2026 Sam edu. Made for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+        
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
